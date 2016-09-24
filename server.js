@@ -7,7 +7,6 @@ var articleone = {
     heading:'article one',
     date:'sept 5',
     content:"<p>is my second article so bere with me</p><p> is what i am a plane paper with nothing on it</p>"
-    
 };
 
 function createTemplate (data)
@@ -16,7 +15,7 @@ function createTemplate (data)
     var date= data.date;
     var content= data.content;
     
-    var template=
+    var htmlTemplate=
     <html>
         <head>
             <title>${title}</title>
