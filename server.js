@@ -2,6 +2,15 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 
+var carticleone = {
+    title: 'article one | harsh goyal',
+    heading:'article one',
+    date:'sept 5'
+    content:"<p>vefvefvegvergvedvf</p><p>cdfcsdfvfsvdfvfdvdf</p>"};
+
+
+
+
 var app = express();
 app.use(morgan('combined'));
 
