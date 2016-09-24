@@ -6,7 +6,9 @@ var carticleone = {
     title: 'article one | harsh goyal',
     heading:'article one',
     date:'sept 5'
-    content:"<p>vefvefvegvergvedvf</p><p>cdfcsdfvfsvdfvfdvdf</p>"};
+    content:"<h5>vefvefvegvergvedvf</h5>"
+    
+};
 
 
 
