@@ -15,29 +15,7 @@ function createTemplate (data)
     var date= data.date;
     var content= data.content;
     
-    var htmlTemplate=
-    <html>
-        <head>
-            <title>${title}</title>
-            <link href="/ui/style.css" rel="stylesheet" />
-        </head>
-    <body>
-            <div class="container">
-            <div>
-                <a href="/">home</a>
-               
-            </div>
-             <hr/>
-             <h3>article two</h3>
-             <div>${date}</div>
-             <div>
-                ${content}
-             </div>
-             </div>
-            </body>
-    </html>
-    
-    ;
+    var htmlTemplate= "<html><head><title>${title}</title><link href="/ui/style.css" rel="stylesheet" /></head><body><div class="container"><div><a href="/">home</a></div><hr/><h3>article two</h3><div>${date}</div><div>${content}</div></div></body></html>";
     return htmlTemplate;
 }
 
