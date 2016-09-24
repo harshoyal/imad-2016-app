@@ -17,7 +17,12 @@ function createTemplate (data)
     var content= data.content;
     
     var template=
-    <html><head><title>${title}</title><link href="/ui/style.css" rel="stylesheet" /></head><body>
+    <html>
+        <head>
+            <title>${title}</title>
+            <link href="/ui/style.css" rel="stylesheet" />
+        </head>
+    <body>
             <div class="container">
             <div>
                 <a href="/">home</a>
