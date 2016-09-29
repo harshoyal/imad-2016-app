@@ -5,12 +5,12 @@ body {
 }
 
 .container{
-        max-width: 400px;
+        max-width: 800px;
         margin: 0 auto;
         color: red;
-        padding-top: 100px;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-top: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
         
     }
 
