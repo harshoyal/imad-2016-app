@@ -2,12 +2,34 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 
-var articleOne = {
+var articles = {
+
+ 'article-One': {
     title: 'article one | harsh goyal',
     heading:'article one',
     date:'sept 5',
-    content:`<p>is my second article so bere with me</p><p> is what i am a plane paper with nothing on it</p>
-                <p>this the extra piece of line i am writing to express things properly</p>`
+    content:`<p>is my first article so bere with me</p>
+             <p> is what i am a plane paper with nothing on it</p>
+             <p>this the extra piece of line i am writing to express things properly</p>`
+},
+
+'article-Two': {
+    title: 'article Two | harsh goyal',
+    heading:'article two',
+    date:'sept 8',
+    content:`<p>is my second article so bere with me</p>
+             <p> is what i am a plane paper with nothing on it</p>
+             <p>this the extra piece of line i am writing to express things properly</p>`
+},
+
+'article-Three': {
+    title: 'article Three | harsh goyal',
+    heading:'article three',
+    date:'sept 13',
+    content:`<p>is my three article so bere with me</p>
+             <p> is what i am a plane paper with nothing on it</p>
+             <p>this the extra piece of line i am writing to express things properly</p>`
+}
 };
 
 function createTemplate (data)
@@ -58,12 +80,14 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/article-one', function (req, res) {
-  res.send(createTemplate (articleOne));
+app.get('/:articleName', function (req, res) {
+    var articleName = req.params.articleName;
+  res.send(createTemplate(articles[articleName]));
 });
 
-app.get('/article-two', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
+app.get('/:articleName', function (req, res) {
+var articleName = req.params.articleName;
+res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/article-three', function (req, res) {
