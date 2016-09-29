@@ -8,7 +8,21 @@ element.innerHTML = "new value is just un certain so kindly wait";
 //move the image
 
 var img = document.getElementById("madi")
+var moveLeft=0;
+function moveRight ()
+{
+    marginLeft= marginLeft+10;
+    img.style.marginLeft= marginLeft+ 'px';
+    
+}
 
 img.onclick = function(){
-img.style.marginLeft='100px';
+
+//before
+//img.style.marginLeft='100px';
+
+    //after
+    // haer moveRight() is the function on every 100 ms 
+var interval= setInterval(moveRight,100);
+
 };
