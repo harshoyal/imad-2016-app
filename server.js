@@ -4,7 +4,7 @@ var path = require('path');
 
 var articles = {
 
- 'article-One': {
+ 'article-one': {
     title: 'article one | harsh goyal',
     heading:'article one',
     date:'sept 5',
@@ -13,7 +13,7 @@ var articles = {
              <p>this the extra piece of line i am writing to express things properly</p>`
 },
 
-'article-Two': {
+'article-two': {
     title: 'article Two | harsh goyal',
     heading:'article two',
     date:'sept 8',
@@ -22,7 +22,7 @@ var articles = {
              <p>this the extra piece of line i am writing to express things properly</p>`
 },
 
-'article-Three': {
+'article-three': {
     title: 'article Three | harsh goyal',
     heading:'article three',
     date:'sept 13',
@@ -85,9 +85,9 @@ app.get('/:articleName', function (req, res) {
   res.send(createTemplate(articles[articleName]));
 });
 
-app.get('/:articleName', function (req, res) {
-var articleName = req.params.articleName;
-res.send(createTemplate(articles[articleName]));
+app.get('/:article-two', function (req, res) {
+//var articleName = req.params.articleName;
+//res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/article-three', function (req, res) {
