@@ -16,12 +16,12 @@ function moveRight ()
     
 }
 
-img.onclick = function(){
+img.onclick = function() {
+
+var interval= setInterval(moveRight,100);
 //before
 //img.style.marginLeft='100px';
 
     //after
     // haer moveRight() is the function on every 100 ms 
-var interval= setInterval(moveRight,100);
-
 };
