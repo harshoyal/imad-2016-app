@@ -1,6 +1,6 @@
 console.log('Loaded!');
 //change the text of the main page and see it happening
 
-var element = document.getElementById("1");
+var element = document.getElementById("apple");
 
-element.innerHtml = "new value is just un certain so kindly wait";
+element.innerHTML = "new value is just un certain so kindly wait";
