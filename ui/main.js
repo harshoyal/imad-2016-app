@@ -11,13 +11,12 @@ var img = document.getElementById("madi")
 var moveLeft=0;
 function moveRight ()
 {
-    marginLeft= marginLeft+10;
-    img.style.marginLeft= marginLeft+ 'px';
+    marginLeft= marginLeft + 10 ;
+    img.style.marginLeft= marginLeft + 'px';
     
 }
 
 img.onclick = function(){
-
 //before
 //img.style.marginLeft='100px';
 
